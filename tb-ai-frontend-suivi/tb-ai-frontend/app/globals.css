@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Cercle lumineux tournant pendant le calcul (analyse en cours) */
+@keyframes glow-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.glow-spinner {
+  width: 56px;
+  height: 56px;
+  border-radius: 9999px;
+  border: 3px solid transparent;
+  border-top-color: #3b82f6;
+  border-right-color: #3b82f6;
+  box-shadow: 0 0 16px 2px rgba(59, 130, 246, 0.55);
+  animation: glow-spin 0.9s linear infinite;
+}
+.dark .glow-spinner {
+  border-top-color: #60a5fa;
+  border-right-color: #60a5fa;
+  box-shadow: 0 0 18px 3px rgba(96, 165, 250, 0.6);
+}

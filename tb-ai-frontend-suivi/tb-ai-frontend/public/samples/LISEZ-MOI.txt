@@ -1,0 +1,19 @@
+RADIOS D'EXEMPLE POUR LA DEMO PUBLIQUE
+======================================
+
+Pour que les évaluateurs puissent tester l'analyse en direct sans avoir de radio sous la main :
+
+1. Copiez 2 ou 3 radiographies thoraciques ANONYMES et libres de droits dans ce dossier.
+   Sources publiques utilisées pour l'entraînement : Montgomery County et Shenzhen (NIH / U.S. National Library of Medicine).
+   Vérifiez la licence et citez la source dans le dossier de candidature.
+   N'utilisez JAMAIS une radio de patient réel.
+2. Nommez-les par exemple : exemple-1.jpg, exemple-2.jpg, exemple-3.jpg (JPEG ou PNG, moins de 1 Mo chacune de préférence).
+3. Modifiez manifest.json pour les lister :
+
+[
+  { "file": "exemple-1.jpg", "label": "Exemple 1 — poumons sans anomalie visible" },
+  { "file": "exemple-2.jpg", "label": "Exemple 2 — anomalie évocatrice" }
+]
+
+Tant que manifest.json contient [], aucun bouton d'exemple n'est affiché.
+Ne décrivez pas un exemple comme « tuberculeux » ou « sain » si vous n'avez pas la vérité terrain du jeu de données : écrivez ce que dit la source.
